@@ -16,7 +16,7 @@ auto-completion = true
 
 end-of-line-diagnostics = "info"
 [editor.inline-diagnostics]
-cursor-line = "hint"
+# cursor-line = "hint"
 
 [editor.cursor-shape]
 # Aids in knowing what mode you're in.
