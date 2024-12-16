@@ -1,5 +1,5 @@
 [terminal.shell]
-program = "/bin/zsh"
+program = "/bin/nu"
 args = ["-l"]
 
 [colors.primary]
