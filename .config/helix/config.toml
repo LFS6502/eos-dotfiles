@@ -14,9 +14,9 @@ mouse = false
 auto-format = true
 auto-completion = true
 
-end-of-line-diagnostics = "info"
+end-of-line-diagnostics = "hint"
 [editor.inline-diagnostics]
-# cursor-line = "hint"
+cursor-line = "warning"
 
 [editor.cursor-shape]
 # Aids in knowing what mode you're in.
