@@ -899,6 +899,7 @@ $env.config = {
 }
 
 alias spt = spotify_player
+alias ff = fastfetch
 
 source ./.zoxide.nu
 source ./.oh-my-posh.nu
