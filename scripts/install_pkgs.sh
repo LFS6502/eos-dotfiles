@@ -4,24 +4,24 @@
 
 # Update system
 yay
+sudo pacman -Sy #just in case
 
 # Install terminal and shell.
 yay -S alacritty
-yay -S zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+yay -S nushell
+yay -S oh-my-posh
+yay -S zoxide
 
 # Install appearance stuff.
 yay -S picom
 yay -S xborder-git
-yay -S zoxide
 yay -S polybar
 
 # Install editor
 yay -S helix-git
 
 # Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# Installing with curl because the extra/rustup package fails to set PATH for some reason.
+yay -S rustup
 rustup update stable
 rustup component add rust-analyzer
 
