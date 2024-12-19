@@ -3,8 +3,8 @@
 # For endeavouros
 
 # Update system
-yay
 sudo pacman -Sy #just in case
+yay
 
 # Install terminal and shell.
 yay -S alacritty
