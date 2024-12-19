@@ -898,4 +898,7 @@ $env.config = {
     ]
 }
 
-source ~/.zoxide.nu
+alias spt = spotify_player
+
+source ./.zoxide.nu
+source ./.oh-my-posh.nu

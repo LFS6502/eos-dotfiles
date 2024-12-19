@@ -1,6 +1,6 @@
 [terminal.shell]
 program = "/bin/nu"
-args = ["-l"]
+args = []
 
 [colors.primary]
 background = "#000005"
@@ -11,4 +11,5 @@ padding = {x = 5, y = 0}
 dynamic_padding = true
 
 [font]
-size = 14
+normal.family = "MesloLGM Nerd Font"
+size = 13
