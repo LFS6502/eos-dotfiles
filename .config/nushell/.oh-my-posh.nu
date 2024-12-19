@@ -4,7 +4,7 @@ if ($env.config? | is-not-empty) {
 }
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
-$env.POSH_THEME = (echo "/home/xelph/dotfiles/.config/nushell/themes/night-owl.omp.json")
+$env.POSH_THEME = ($env.home + "/.config/nushell/themes/night-owl.omp.json")
 $env.PROMPT_INDICATOR = ""
 $env.POSH_SESSION_ID = (echo "c467a95b-f8ea-4f3f-877b-37299066358a")
 $env.POSH_SHELL = "nu"
