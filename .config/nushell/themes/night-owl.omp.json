@@ -94,9 +94,13 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
-          "template": "\ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
+          "template": "\ue266 {{ .Output }}% ",
           "trailing_diamond": "\ue0d6",
-          "type": "sysinfo"
+          "type": "command",
+          "properties": {
+            "shell": "nu",
+            "command": "cat /proc/loadavg | split row ' ' | first | into float | $in * 100"
+          }
         },
         {
           "background": "#ffffff",
