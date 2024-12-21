@@ -99,7 +99,7 @@
           "type": "command",
           "properties": {
             "shell": "nu",
-            "command": "cat /proc/loadavg | split row ' ' | first | into float | $in * 100"
+            "command": "cat /proc/loadavg | split row ' ' | first | into float | $in * 100 | into int"
           }
         },
         {
