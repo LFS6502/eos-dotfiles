@@ -1,13 +1,14 @@
 #!/usr/bin/env nu
-let icon = match (playerctl status e> ignore | echo $in) {
+use std
+let icon = match (playerctl status e> (std null-device) | echo $in) {
     Playing => "⏵",
     Paused => "⏸",
     _ => (print ""; exit 0)
 }
 
 let data = [
-    (playerctl metadata album e> ignore),
-    (playerctl metadata title e> ignore)
+    (playerctl metadata album e> (std null-device)),
+    (playerctl metadata title e> (std null-device))
 ]
 
 match $data {
