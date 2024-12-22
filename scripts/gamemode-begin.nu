@@ -1,3 +1,3 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env nu
 killall xborders
 killall picom

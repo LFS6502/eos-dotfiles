@@ -198,9 +198,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
 bindsym $mod+Shift+r restart
 # Cycle wallpaper
-bindsym $mod+Shift+d exec --no-startup-id ~/scripts/cycle_wallpaper.sh next
-bindsym $mod+Shift+a exec --no-startup-id ~/scripts/cycle_wallpaper.sh previous
-bindsym $mod+Shift+s exec --no-startup-id ~/scripts/random_wallpaper.sh
+bindsym $mod+Shift+d exec --no-startup-id ~/scripts/cycle_wallpaper.nu next
+bindsym $mod+Shift+a exec --no-startup-id ~/scripts/cycle_wallpaper.nu previous
+bindsym $mod+Shift+s exec --no-startup-id ~/scripts/random_wallpaper.nu
 
 # keybinding in fancy rofi (automated):
 # bindsym F1 exec ~/.config/i3/scripts/keyhint-2
