@@ -899,6 +899,7 @@ $env.config = {
 }
 
 alias spt = spotify_player
+alias gl = git log --oneline --graph --decorate --all
 alias ff = fastfetch
 
 source ./.zoxide.nu
