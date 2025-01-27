@@ -13,6 +13,7 @@ yay -S oh-my-posh
 yay -S zoxide
 
 # Install appearance stuff.
+yay -S i3-auto-layout
 yay -S picom
 yay -S xborder-git
 yay -S polybar

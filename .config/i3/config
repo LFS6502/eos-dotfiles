@@ -391,6 +391,7 @@ exec_always --no-startup-id picom -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.zsh
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1i
+exec_always --no-startup-id i3-auto-layout
 exec_always --no-startup-id killall xborders; xborders -c ~/.config/xborders/config
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
