@@ -27,7 +27,6 @@ rustup update stable
 rustup component add rust-analyzer
 
 # Install music-related programs.
-cargo install spotify_player --features streaming
 yay -S cava
 yay -S cli-visualizer
 
