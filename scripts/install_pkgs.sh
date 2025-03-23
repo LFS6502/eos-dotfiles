@@ -10,6 +10,7 @@ yay
 yay -S alacritty
 yay -S nushell
 yay -S oh-my-posh
+oh-my-posh font install meslo
 yay -S zoxide
 
 # Install appearance stuff.
