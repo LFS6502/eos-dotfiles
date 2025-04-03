@@ -898,6 +898,19 @@ $env.config = {
     ]
 }
 
+$env.config.keybindings ++= [
+  {
+    name: 'unfreeze', 
+    modifier: control, 
+    keycode: "char_z", 
+    event: {
+      send: executehostcommand, 
+      cmd: "job unfreeze"
+    }, 
+    mode: emacs
+  }
+]
+
 alias spt = spotify_player
 alias gl = git log --oneline --graph --decorate --all
 alias ff = fastfetch
