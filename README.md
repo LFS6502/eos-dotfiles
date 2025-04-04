@@ -8,7 +8,8 @@ Required packages:
 
 ## Installation
 - Clone the repository into your home directory.
-- Rename the repository directory to anything of your liking.
+- Rename the repository directory to `dotfiles`.
 - cd into the repository.
-- `$ stow .`
+- `$ stow . --no-folding --adopt`
+- `git reset --hard`
  
