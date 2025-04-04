@@ -35,3 +35,6 @@ yay -S cli-visualizer
 yay -S easyeffects
 yay -S lsp-plugins
 
+# Install general utilities
+yay -S btop
+yay -S gamemode
