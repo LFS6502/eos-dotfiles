@@ -100,7 +100,10 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
+use std "path add"
+path add ($env.HOME | path join ".cargo" | path join "bin")
+
 $env.SUDO_EDITOR = "/usr/bin/hx"
 # $env._ZO_ECHO = 1
 $env._ZO_EXCLUDE_DIRS = $"($nu.home-path):($nu.home-path)/dotfiles:($nu.home-path)/dotfiles/*"
-zoxide init --cmd cd nushell | save -f ($nu.default-config-dir + "/.zoxide.nu")
+# zoxide init --cmd cd nushell | save -f ($nu.default-config-dir + "/.zoxide.nu")

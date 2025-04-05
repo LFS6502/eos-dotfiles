@@ -10,6 +10,6 @@ Required packages:
 - Clone the repository into your home directory.
 - Rename the repository directory to `dotfiles`.
 - cd into the repository.
-- `$ stow . --no-folding --adopt`
+- `$ stow . --dotfiles --no-folding --adopt`
 - `git reset --hard`
  
