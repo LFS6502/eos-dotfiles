@@ -13,7 +13,9 @@ rulers = [100]
 mouse = false
 auto-format = true
 auto-completion = true
+completion-timeout = 5
 
+# Diagnostics
 end-of-line-diagnostics = "hint"
 [editor.inline-diagnostics]
 cursor-line = "warning"
@@ -31,7 +33,7 @@ display-messages = true
 [editor.statusline]
 # Elements
 left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
-center = ["file-name"]
+center = ["version-control", "spacer", "file-name"]
 right = ["file-type", "diagnostics", "separator", "register", "position", "file-encoding"]
 separator = "│"
 
