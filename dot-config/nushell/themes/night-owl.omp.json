@@ -33,7 +33,8 @@
             "folder_icon": "\uf07c ",
             "folder_separator_icon": "<#011627>\ue0b1</> ",
             "home_icon": " \ueb06 ",
-            "style": "agnoster"
+            "style": "mixed",
+            "mixed_threshold": 6
           },
           "style": "powerline",
           "template": "{{ path .Path .Location }}",
