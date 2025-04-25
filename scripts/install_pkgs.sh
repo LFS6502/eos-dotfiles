@@ -8,6 +8,7 @@ yay
 
 # Install terminal and shell.
 yay -S alacritty
+yay -S xdg-terminal-exec
 yay -S nushell
 yay -S oh-my-posh
 oh-my-posh font install meslo
