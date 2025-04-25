@@ -1,4 +1,4 @@
-theme = "new_moon_mod"
+theme = "base16_default"
 
 [editor]
 # Appearance
@@ -7,7 +7,6 @@ line-number = "relative" # It's only relative in normal mode. Absolute in insert
 cursorline = true # Makes the current line highlighted.
 bufferline = "multiple"
 gutters = ["diff", "spacer", "diagnostics", "line-numbers", "spacer", "spacer"]
-rulers = [100]
 
 # Behaviour
 mouse = false
