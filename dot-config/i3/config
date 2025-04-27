@@ -314,7 +314,8 @@ bindsym $mod+n exec /usr/bin/thunar
 bindsym $mod+c exec /usr/bin/gnome-calculator
 #bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym Print exec flameshot gui -p ~/Pictures/Screenshots/ -c -s
-bindsym $mod+Print exec flameshot screen -p ~/Pictures/Screenshots/ -c
+bindsym $mod+Shift+Print exec flameshot screen -p ~/Pictures/Screenshots/ -c
+bindsym $mod+Print exec flameshot gui -p ~/Pictures/Screenshots/ -c
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
