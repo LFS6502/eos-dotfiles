@@ -56,5 +56,5 @@
 "info" = "blue"
 "hint" = "gray"
 "debug" = "gray"
-"warning" = "yellow"
-"error" = "red"
+"warning" = {fg = "yellow", modifiers = ["dim"]}
+"error" =  {fg = "red", modifiers = ["dim"]}
