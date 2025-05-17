@@ -3,7 +3,7 @@
 # version = "0.100.0"
 
 def create_left_prompt [] {
-    let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
+    let dir = match (do -i { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
         '' => '~'
         $relative_pwd => ([~ $relative_pwd] | path join)
@@ -102,6 +102,7 @@ $env.NU_PLUGIN_DIRS = [
 
 use std "path add"
 path add ($env.HOME | path join ".cargo" | path join "bin")
+path add ($env.HOME | path join ".local/bin/env")
 
 $env.SUDO_EDITOR = "/usr/bin/hx"
 # $env._ZO_ECHO = 1
