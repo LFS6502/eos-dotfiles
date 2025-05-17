@@ -127,3 +127,5 @@ eval "$(zoxide init --cmd cd zsh)"
 alias spt="spotify_player"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+. "$HOME/.local/bin/env"
