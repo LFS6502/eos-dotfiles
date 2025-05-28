@@ -1,0 +1,12 @@
+font-family = "MesloLGM Nerd Font"
+font-size = 13
+mouse-hide-while-typing = true
+confirm-close-surface = false
+
+background = "000005"
+background-opacity = 0.88
+
+window-decoration = "none"
+window-padding-balance = true
+
+command = "nu"

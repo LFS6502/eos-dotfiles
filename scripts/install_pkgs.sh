@@ -7,7 +7,7 @@ sudo pacman -Sy #just in case
 yay
 
 # Install terminal and shell.
-yay -S alacritty
+yay -S ghostty
 yay -S xdg-terminal-exec
 yay -S nushell
 yay -S oh-my-posh
