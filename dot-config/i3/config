@@ -311,7 +311,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/librewolf
 bindsym $mod+n exec /usr/bin/thunar
-bindsym $mod+c exec ghostty --background-opacity=0.7 --x11-instance-name="ghostty-floating" -e tmux new-session -A -s calculator 'fend'
+bindsym $mod+c exec tmux set-option status off && ghostty --background-opacity=0.7 --x11-instance-name="ghostty-floating" -e tmux new-session -A -s calculator 'fend'
 
 #bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym Print exec flameshot gui -p ~/Pictures/Screenshots/ -c -s
