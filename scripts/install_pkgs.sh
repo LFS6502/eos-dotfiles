@@ -8,6 +8,8 @@ yay
 
 # Install terminal and shell.
 yay -S ghostty
+yay -S tmux
+yay -S fend
 yay -S xdg-terminal-exec
 yay -S nushell
 yay -S oh-my-posh
