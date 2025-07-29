@@ -41,3 +41,4 @@ yay -S lsp-plugins
 # Install general utilities
 yay -S btop
 yay -S gamemode
+yay -S rofimoji

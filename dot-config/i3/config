@@ -207,6 +207,9 @@ bindsym $mod+Shift+d exec --no-startup-id ~/scripts/cycle_wallpaper.nu next
 bindsym $mod+Shift+a exec --no-startup-id ~/scripts/cycle_wallpaper.nu previous
 bindsym $mod+Shift+s exec --no-startup-id ~/scripts/random_wallpaper.nu
 
+# Rofimoji
+bindsym $mod+period exec rofimoji
+
 # keybinding in fancy rofi (automated):
 # bindsym F1 exec ~/.config/i3/scripts/keyhint-2
 # alternative
@@ -311,7 +314,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/librewolf
 bindsym $mod+n exec /usr/bin/thunar
-bindsym $mod+c exec tmux set-option status off && ghostty --background-opacity=0.7 --x11-instance-name="ghostty-floating" -e tmux new-session -A -s calculator 'fend'
+bindsym $mod+c exec tmux set-option status off && ghostty --background-opacity=0.8 --x11-instance-name="ghostty-floating" -e tmux new-session -A -s calculator 'fend'
 
 #bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym Print exec flameshot gui -p ~/Pictures/Screenshots/ -c -s
@@ -401,7 +404,7 @@ exec_always --no-startup-id picom -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.zsh
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1i
-exec_always --no-startup-id i3-auto-layout
+exec_always --no-startup-id killall i3-auto-layout; i3-auto-layout
 exec_always --no-startup-id killall xborders; xborders -c ~/.config/xborders/config
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
@@ -492,9 +495,11 @@ for_window [class="Yad" instance="yad"] floating enable
 for_window [class="gnome-calculator" instance="gnome-calculator"] floating enable
 for_window [class="gnome-calculator" instance="gnome-calculator"] resize set 400 600
 for_window [class="com.mitchellh.ghostty" instance="ghostty-floating"] floating enable
+for_window [class="com.mitchellh.ghostty" instance="ghostty-floating"] sticky enable
 for_window [class="com.mitchellh.ghostty" instance="ghostty-floating"] resize set 1000 500
 for_window [class="com.mitchellh.ghostty" instance="ghostty-floating"] move position 460 20
 for_window [class="GitHub Desktop" instance="github desktop"] floating enable
+for_window [class="Audacious" instance="audacious"] sticky enable
 
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 
