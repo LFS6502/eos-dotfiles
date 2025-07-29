@@ -34,7 +34,7 @@
             "folder_separator_icon": "<#011627>\ue0b1</> ",
             "home_icon": " \ueb06 ",
             "style": "mixed",
-            "mixed_threshold": 6
+            "mixed_threshold": 8
           },
           "style": "powerline",
           "template": "{{ path .Path .Location }}",
