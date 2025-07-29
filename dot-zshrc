@@ -129,3 +129,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 
 . "$HOME/.local/bin/env"
+
+source /home/xelph/.config/broot/launcher/bash/br
