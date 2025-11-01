@@ -8,5 +8,7 @@ background-opacity = 0.88
 
 window-decoration = "none"
 window-padding-balance = true
+window-inherit-working-directory = false
+resize-overlay = "never"
 
 command = "nu"
