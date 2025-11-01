@@ -103,6 +103,7 @@ $env.NU_PLUGIN_DIRS = [
 use std "path add"
 path add ($env.HOME | path join ".cargo" | path join "bin")
 path add ($env.HOME | path join ".local/bin/env")
+path add ($env.HOME | path join "go/bin")
 
 $env.SUDO_EDITOR = "/usr/bin/hx"
 # $env._ZO_ECHO = 1

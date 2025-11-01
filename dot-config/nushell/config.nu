@@ -915,5 +915,7 @@ alias spt = spotify_player
 alias gl = git log --oneline --graph --decorate --all
 alias ff = fastfetch
 
+oh-my-posh init nu --config /home/xelph/dotfiles/dot-config/nushell/themes/night-owl.omp.json
 source ./.zoxide.nu
-source ./.oh-my-posh.nu
+# source ./.oh-my-posh.nu
+source $"($nu.home-path)/.cargo/env.nu"
