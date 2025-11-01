@@ -1,2 +1,14 @@
 [language-server.rust-analyzer.config]
 check.command = "clippy"
+
+[language-server.discord-rpc]
+command = "discord-rpc-lsp"
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "discord-rpc"]
+
+[[language]]
+name = "toml"
+language-servers = ["discord-rpc"]
+
