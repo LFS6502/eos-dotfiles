@@ -3,7 +3,7 @@
 # version = "0.100.0"
 
 def create_left_prompt [] {
-    let dir = match (do -i { $env.PWD | path relative-to $nu.home-path }) {
+    let dir = match (do -i { $env.PWD | path relative-to $nu.home-dir }) {
         null => $env.PWD
         '' => '~'
         $relative_pwd => ([~ $relative_pwd] | path join)
@@ -107,5 +107,5 @@ path add ($env.HOME | path join "go/bin")
 
 $env.SUDO_EDITOR = "/usr/bin/hx"
 # $env._ZO_ECHO = 1
-$env._ZO_EXCLUDE_DIRS = $"($nu.home-path):($nu.home-path)/dotfiles:($nu.home-path)/dotfiles/*"
+$env._ZO_EXCLUDE_DIRS = $"($nu.home-dir):($nu.home-dir)/dotfiles:($nu.home-dir)/dotfiles/*"
 # zoxide init --cmd cd nushell | save -f ($nu.default-config-dir + "/.zoxide.nu")
