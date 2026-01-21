@@ -13,13 +13,13 @@ let data = [
 
 match $data {
     ["", $title] => {
-        playerctl metadata --format ($icon + " {{trunc(title, 40)}} - {{trunc(artist,25)}}")
+        playerctl metadata --format ($icon + " {{trunc(title, 60)}} │ {{trunc(artist,60)}}")
     },
     [$album, $title] if $album == $title => {
-        playerctl metadata --format ($icon +  " {{trunc(title, 40)}} - {{trunc(artist, 25)}}")
+        playerctl metadata --format ($icon +  " {{trunc(title, 60)}} │ {{trunc(artist, 60)}}")
     },
     [$album, $title] => {
-        playerctl metadata --format ($icon + " {{trunc(title, 40)}} - {{trunc(artist, 25)}} - {{trunc(album, 25)}}")
+        playerctl metadata --format ($icon + " {{trunc(title, 60)}} │ {{trunc(artist, 60)}} │ {{trunc(album, 60)}}")
     }
     _ => "No players"
 } 
