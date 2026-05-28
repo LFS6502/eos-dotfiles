@@ -2,7 +2,7 @@
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: "Noto Sans CJK KR Regular";
   /*font-family: "D2CodingLigature Nerd Mono";*/
-  font-size: 13px;
+  font-size: 26px;
   min-height: 0;
 }
 
@@ -24,6 +24,11 @@ window#waybar.hidden {
 }
 
 #workspaces {
+  font-size: 26px
+}
+
+#workspaces button {
+  min-width: 40px;
 }
 
 #window {
@@ -31,7 +36,7 @@ window#waybar.hidden {
   padding-left: 8;
   padding-right: 8;
   background-color: rgba(0,0,0,0.3);
-  font-size:14px;
+  font-size:28px;
   font-weight: bold;
 }
 
@@ -80,7 +85,6 @@ button:hover {
   border-bottom: 3px solid #ffffff;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -114,8 +118,13 @@ button:hover {
 }
 
 #clock {
-  font-size:14px;
+  font-size:26px;
   font-weight: bold;
+  margin: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(0,0,0,0.3);
+  color: #ffffff;
 }
 
 #battery icon {
