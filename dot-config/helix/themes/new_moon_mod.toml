@@ -77,7 +77,7 @@
 "ui.statusline.insert" = { fg = "white", bg = "dark_yellow" }
 "ui.statusline.select" = { fg = "white", bg = "dark_green" }
 
-"ui.bufferline" = { fg = "text", bg = "widget" }
+"ui.bufferline" = { fg = "text", bg = "darker_blue" }
 "ui.bufferline.active" = { fg = "white", bg = "darker_blue" }
 "ui.bufferline.background" = { bg = "darkest" }
 
@@ -98,6 +98,11 @@
 "diagnostic".underline = { color = "yellow", style = "curl" }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"ui.gutter" = {
+    fg = "darkest",
+    "selected" = {fg = "darkest"}
+}
 
 [palette]
 darkest = "#2d2d2d"

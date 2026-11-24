@@ -1,6 +1,10 @@
 [language-server.rust-analyzer.config]
 check.command = "clippy"
 
+[language-server.spade-language-server]
+command = "swim"
+args = ["lsp"]
+
 [language-server.discord-rpc]
 command = "discord-rpc-lsp"
 
